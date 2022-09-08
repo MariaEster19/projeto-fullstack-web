@@ -1,18 +1,19 @@
 'use strict'
 
-var Usuario = require('../modelos/usuarios');
+const Usuario = require('../modelos/usuarios');
 
 function inicio(req,res) {
     res.status(200).send({
-        message:'Hello world!'
+        nome:'Me chamo Maria Ester',
+        idade: 'Tenho 18 aninhos!',
     });
 };
 
-    function teste(req, res){
-        res.status(200).send({
-            message: 'Testing node server!'
-        });
-    };
+function teste(req, res){
+    res.status(200).send({
+        message: 'Testing node server!'
+    });
+};
 
     module.exports = {
         inicio,
